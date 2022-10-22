@@ -32,8 +32,8 @@ jobs:
       - name: Configure Poetry
         working-directory: ./main
         run: |
-          poetry config repositories.omnia ${{ secrets.PIPSERVER_URL }}
-          poetry config http-basic.omnia ${{ secrets.PIPSERVER_USERNAME }} ${{ secrets.PIPSERVER_PASSWORD }}
+          poetry config repositories.radar ${{ secrets.PIPSERVER_URL }}
+          poetry config http-basic.radar ${{ secrets.PIPSERVER_USERNAME }} ${{ secrets.PIPSERVER_PASSWORD }}
       - name: Install Python dependencies
         working-directory: ./main
         run: poetry install
@@ -72,11 +72,11 @@ jobs:
       - name: Configure Poetry
         working-directory: ./main
         run: |
-          poetry config repositories.omnia ${{ secrets.PIPSERVER_URL }}
-          poetry config http-basic.omnia ${{ secrets.PIPSERVER_USERNAME }} ${{ secrets.PIPSERVER_PASSWORD }}
+          poetry config repositories.radar ${{ secrets.PIPSERVER_URL }}
+          poetry config http-basic.radar ${{ secrets.PIPSERVER_USERNAME }} ${{ secrets.PIPSERVER_PASSWORD }}
       - name: Pypiserver Publish
         working-directory: ./main
-        run: poetry publish -r omnia --build
+        run: poetry publish -r radar --build
   build-and-push-docker-image:
     runs-on: ubuntu-latest
     needs: [install-test-coverage]
