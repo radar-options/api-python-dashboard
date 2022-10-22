@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "api-dashboard"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Ernesto Martinez del Pino <ernestomar1997@hotmail.com>"]
 packages = [
