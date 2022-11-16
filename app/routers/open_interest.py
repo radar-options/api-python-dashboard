@@ -8,7 +8,7 @@ from core.APILayer import APILayer
 router = APIRouter(prefix="/api/v1/open_interest", tags=["open_interest"])
 
 
-@router.get("{date}")
+@router.get("/{date}")
 async def get_open_interest(
     request: Request,
     date: dt.date
