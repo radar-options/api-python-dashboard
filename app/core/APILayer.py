@@ -1,4 +1,5 @@
 import datetime as dt
+from pymongo import MongoClient
 
 from radar_mongodb import QueryManager
 
@@ -11,7 +12,7 @@ class APILayer:
         open_interest_collection_name: str = None
     ):
         self.query_manager = QueryManager(
-            mongodb_uri,
+            MongoClient(mongodb_uri).get_default_database(),
             cboe_collection_name,
             spot_collection_name,
             open_interest_collection_name
