@@ -8,6 +8,9 @@ from core.APILayer import APILayer
 def _startup_model(app: FastAPI) -> None:
     app.state.APILayer = APILayer(
         mongodb_uri=config("MONGODB_URI"),
+        cboe_collection_name=config("CBOE_COLLECTION_NAME"),
+        spot_collection_name=config("SPOT_COLLECTION_NAME"),
+        open_interest_collection_name=config("OPEN_INTEREST_COLLECTION_NAME"),
     )
 
 
