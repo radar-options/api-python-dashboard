@@ -395,7 +395,7 @@ python-versions = "*"
 
 [[package]]
 name = "radar-mongodb"
-version = "0.3.2"
+version = "0.4.0"
 description = ""
 category = "main"
 optional = false
@@ -485,7 +485,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "d524a3132bfc445814d4390fe98043ea71eab99f26efffaea0845dc5ec217e17"
+content-hash = "bc7f72914a4af1abb5b2202c721fd5a9a14003d3979f2fd8fad2f9746648386d"
 
 [metadata.files]
 anyio = [
@@ -674,8 +674,8 @@ pytest-html = []
 pytest-metadata = []
 python-decouple = []
 radar-mongodb = [
-    {file = "radar-mongodb-0.3.2.tar.gz", hash = "sha256:926c567ad1813cbf31c4b03c0541137a500d9c68a64a0a81197d19bbe50cfe6b"},
-    {file = "radar_mongodb-0.3.2-py3-none-any.whl", hash = "sha256:d2e6a253b4dd97f69c9a041bfab01f11fa4813bcd3be27969ce00bad61c5cb36"},
+    {file = "radar-mongodb-0.4.0.tar.gz", hash = "sha256:042cf627b18b6ceb2754420e70fe139a3e0ed4091712aa5981be71adb0abc8ea"},
+    {file = "radar_mongodb-0.4.0-py3-none-any.whl", hash = "sha256:678d9011c89dc3c67f1755f317ef8b29ae5067589d9af168a7ac273fc75f7f13"},
 ]
 sniffio = [
     {file = "sniffio-1.3.0-py3-none-any.whl", hash = "sha256:eecefdce1e5bbfb7ad2eeaabf7c1eeb404d7757c379bd1f7e5cce9d8bf425384"},

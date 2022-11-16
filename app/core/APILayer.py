@@ -19,4 +19,4 @@ class APILayer:
         )
 
     def find(self, date: dt.date):
-        return self.query_manager.spot_queries.find(date)
+        return self.query_manager.open_interest.find(date)
